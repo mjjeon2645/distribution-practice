@@ -7,7 +7,7 @@
     "test": "jest",
     "watch:test": "jest --watchAll",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx",
-    "build": "parcel build index.html --public-url ./",
+    "build": "parcel build index.html --public-url ./ && cp ./404.html ./dist",
     "codeceptjs": "codeceptjs run --steps",
     "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
     "codeceptjs:ui": "codecept-ui --app"
